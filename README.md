@@ -1,24 +1,6 @@
-# deno_website2
+# Deno website em português
 
-[![Build Status](https://github.com/denoland/deno_website2/workflows/ci/badge.svg?branch=master&event=push)](https://github.com/denoland/deno_website2/actions)
-
-This is the code for https://deno.land/
-
-This website consists of two parts
-
-1. A Cloudflare Worker
-2. A Next.js app hosted on Vercel
-
-We want to provide pretty and semantic URLs for modules that will be used within
-Deno. For example: https://deno.land/std/http/server.ts
-
-When we request this file inside of Deno, we need to receive back the raw
-content of the file. However, when we visit that URL in the browser we want to
-see a pretty HTML file with syntax highlighting.
-
-To accomplish this the Cloudflare Worker looks at the "Accept:" HTTP header to
-see if the client wants HTML or not. If it does want HTML, we simply proxy the
-request to Vercel. (We use Vercel because of their nice GitHub integration.)
+https://deno-pt.vercel.app/
 
 ## History
 
