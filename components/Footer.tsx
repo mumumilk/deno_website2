@@ -24,48 +24,55 @@ function Footer(props: { simple?: boolean }): React.ReactElement {
               href="https://doc.deno.land/builtin/stable"
               className="text-base leading-6 text-gray-500 hover:text-gray-900"
             >
-              Runtime API
+              {/* Runtime API */}
+              API da runtime
             </a>
           </div>
           <div className="px-5 py-2">
             <Link href="/[...rest]" as="/std">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Standard Library
+                {/* Standard Library */}
+                Biblioteca padrão
               </a>
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/x">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Third Party Modules
+                {/* Third Party Modules */}
+                Módulos externos
               </a>
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/benchmarks">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Benchmarks
+                {/* Benchmarks */}
+                Comparativo
               </a>
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/artwork">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Artwork
+                {/* Artwork */}
+                Artes
               </a>
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/posts">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                News
+                {/* News */}
+                Notícias
               </a>
             </Link>
           </div>
           <div className="px-5 py-2">
             <Link href="/translations">
               <a className="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Translations
+                {/* Translations */}
+                Traduções
               </a>
             </Link>
           </div>
