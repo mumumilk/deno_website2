@@ -588,6 +588,11 @@ function Version({
             <option key="master" value="master">
               master
             </option>
+            {versions.map((v) => (
+              <option key={v} value={v}>
+                {v}
+              </option>
+            ))}
           </select>
         </div>
       </div>
