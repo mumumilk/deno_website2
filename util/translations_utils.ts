@@ -9,6 +9,7 @@ export const TRANSLATIONS: Translation[] = json.sort((a, b) =>
 export interface Translation {
   language: string;
   english: string;
+  portuguese: string;
   link: string;
   repository: string;
 }

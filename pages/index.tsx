@@ -82,7 +82,7 @@ for await (const req of s) {
               {/*Has built-in utilities like a dependency inspector (
               <InlineCode>deno info</InlineCode>) and a code formatter (
               <InlineCode>deno fmt</InlineCode>). */}
-              Possuí utilidades como inspetor de dependências (<InlineCode>deno info</InlineCode>)
+              Possui utilidades como inspetor de dependências (<InlineCode>deno info</InlineCode>)
               e um formatador de código (<InlineCode>deno fmt</InlineCode>)
             </li>
             <li>

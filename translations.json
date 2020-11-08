@@ -2,18 +2,21 @@
   {
     "language": "English",
     "english": "English",
+    "portuguese": "Inglês",
     "link": "https://deno.land/",
     "repository": "https://github.com/denoland/deno_website2"
   },
   {
     "language": "日本語",
     "english": "Japanese",
+    "portuguese": "Japonês",
     "link": "https://deno-ja.vercel.app/",
     "repository": "https://github.com/tokiedokie/deno_website2_japanese"
   },
   {
     "language": "العربية",
     "english": "Arabic",
+    "portuguese": "Árabe",
     "link": "https://deno-ar.vercel.app/",
     "repository": "https://github.com/moncefplastin07/deno_website2"
   }
