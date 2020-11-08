@@ -358,7 +358,7 @@ const InstallSection = () => {
     <div key="cargo" className="my-4 text-gray-700">
       <p className="py-2">
         {/* Build and install from source using{" "} */}
-        Constrúa e instale através do fonte utilizando{" "}
+        Construa e instale através do código fonte utilizando{" "}
         <a href="https://crates.io/crates/deno" className="link">
           Cargo
         </a>
