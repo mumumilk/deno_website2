@@ -29,7 +29,7 @@ export function outputB() {
   console.log("Module B's mainModule url", Deno.mainModule);
   console.log(
     "Is module B the main module via import.meta.main?",
-    import.meta.main,
+    import.meta.main
   );
 }
 ```
@@ -45,7 +45,7 @@ function outputA() {
   console.log("Module A's mainModule url", Deno.mainModule);
   console.log(
     "Is module A the main module via import.meta.main?",
-    import.meta.main,
+    import.meta.main
   );
 }
 

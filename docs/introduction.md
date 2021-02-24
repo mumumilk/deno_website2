@@ -4,10 +4,11 @@ Deno is a JavaScript/TypeScript runtime with secure defaults and a great
 developer experience.
 
 It's built on V8, Rust, and Tokio. -->
+
 # Introdução
 
-Deno é uma runtime Javascript/Typescript segura por padrão e com uma
-ótima experiência para pessoas desenvolvedoras.
+Deno é uma runtime Javascript/Typescript segura por padrão e com uma ótima
+experiência para pessoas desenvolvedoras.
 
 É construído em cima do V8, Rust e Tokio.
 
@@ -24,6 +25,7 @@ Deno é uma runtime Javascript/Typescript segura por padrão e com uma
   modules](https://github.com/denoland/deno/tree/master/std) that are guaranteed
   to work with Deno.
 - Scripts can be bundled into a single JavaScript file. -->
+
 ## Funcionalidades Destacadas
 
 - Segura por padrão. Sem acesso à arquivos, rede ou ambiente (a não ser que
@@ -50,18 +52,21 @@ standard browser-compatible protocol for loading modules: URLs.
 
 Among other things, Deno is a great replacement for utility scripts that may
 have been historically written with bash or python. -->
+
 ## Filosofia
 
 Deno tem o intuito de ser um ambiente seguro e produtivo de escrita de código
 para a pessoa programadora moderna.
 
-Deno sempre será distribuído como um único executável. Dado uma URL para um 
-programa Deno, é executável com nada mais que [os ~15 megabytes do executável comprimido](https://github.com/denoland/deno/releases).
-Deno exerce explicitamente o papel tanto de runtime, quanto de gerenciador de pacotes. Ele usa
-um protocolo padrão, compatível com navegadores, para o carregamento de módulos: as URLs.
+Deno sempre será distribuído como um único executável. Dado uma URL para um
+programa Deno, é executável com nada mais que
+[os ~15 megabytes do executável comprimido](https://github.com/denoland/deno/releases).
+Deno exerce explicitamente o papel tanto de runtime, quanto de gerenciador de
+pacotes. Ele usa um protocolo padrão, compatível com navegadores, para o
+carregamento de módulos: as URLs.
 
-Entre outras coisas, Deno é um ótimo substituto para scripts que antes eram escritos utilizando
-bash ou python.
+Entre outras coisas, Deno é um ótimo substituto para scripts que antes eram
+escritos utilizando bash ou python.
 
 <!-- ## Goals
 
@@ -76,17 +81,18 @@ bash ou python.
   improve developer experience.
 - Does not leak V8 concepts into user land.
 - Be able to serve HTTP efficiently. -->
+
 ## Objetivos
 
 - Gerar um único executável (`deno`).
 - Prover segurança por padrão.
   - A não ser que permitido explícitamente, scripts não podem acessar arquivos,
-  ambiente ou a rede.
-- Ser compatível com navegadores: O conjunto de programas que são escritos 
-inteiramente em JavaScript, e não usam o namespace global `Deno`, devem ser capazes
-de rodar em um navegador moderno sem nenhuma alteração.
-- Prover ferramental para testes unitários, formatação de código e linting, para melhor
-experiência de desenvolvimento.
+    ambiente ou a rede.
+- Ser compatível com navegadores: O conjunto de programas que são escritos
+  inteiramente em JavaScript, e não usam o namespace global `Deno`, devem ser
+  capazes de rodar em um navegador moderno sem nenhuma alteração.
+- Prover ferramental para testes unitários, formatação de código e linting, para
+  melhor experiência de desenvolvimento.
 - Não vazar conceitos do V8 para o campo do usuário.
 - Ser capaz de servir HTTP de maneira eficiente.
 
@@ -101,16 +107,17 @@ experiência de desenvolvimento.
 - Deno always dies on uncaught errors.
 - Uses "ES Modules" and does not support `require()`. Third party modules are
   imported via URLs: -->
+
 ## Comparação com Node.js
 
 - Deno não usa `npm`.
   - Os módulos são referenciados como URLs ou caminhos de arquivo.
 - Deno não possuí `package.json` no seu algorítmo de resolução de módulos.
 - Todas as operações asíncronas no Deno retornam uma promise. Portanto as APIs
-providenciadas pelo Deno são diferentes do Node.
+  providenciadas pelo Deno são diferentes do Node.
 - Deno requer permissões explícitas para acesso à arquivos, rede e ambiente.
 - Utiliza "ES Modules" e não suporta `require()`. Módulos externos são
-importados via URLs.
+  importados via URLs.
 
   ```javascript
   import * as log from "https://deno.land/std@$STD_VERSION/log/mod.ts";
@@ -123,9 +130,11 @@ importados via URLs.
   airplane.)
 - Modules/files loaded from remote URLs are intended to be immutable and
   cacheable. -->
+
 ## Outros comportamentos-chave
 
 - Códigos externos são solicitados e cacheados na primeira execução, e não são
   atualizados até que o código seja executado com a flag `--reload`. (Portanto,
   seu código irá funcionar até dentro de um avião).
-- Módulos/arquivos carregados a partir de URLs remotas são cacheados e imutáveis.
+- Módulos/arquivos carregados a partir de URLs remotas são cacheados e
+  imutáveis.

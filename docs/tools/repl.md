@@ -30,7 +30,7 @@ up program state in the global context.
 | Ctrl-Y                | Paste from Yank buffer                                                                           |
 | Ctrl-Y                | Paste from Yank buffer (Meta-Y to paste next yank instead)                                       |
 | Ctrl-Z                | Suspend (Unix only)                                                                              |
-| Ctrl-_                | Undo                                                                                             |
+| Ctrl-\_               | Undo                                                                                             |
 | Meta-0, 1, ..., -     | Specify the digit to the argument. `–` starts a negative argument.                               |
 | Meta-<                | Move to first entry in history                                                                   |
 | Meta->                | Move to last entry in history                                                                    |
@@ -48,5 +48,5 @@ up program state in the global context.
 
 | Identifier | Description                          |
 | ---------- | ------------------------------------ |
-| _          | Yields the last evaluated expression |
-| _error     | Yields the last thrown error         |
+| \_         | Yields the last evaluated expression |
+| \_error    | Yields the last thrown error         |

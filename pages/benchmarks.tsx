@@ -111,9 +111,9 @@ function Benchmarks(): React.ReactElement {
               {/* As part of Deno's continuous integration and testing pipeline we
               measure the performance of certain key metrics of the runtime. You
               can view these benchmarks here. */}
-              Como parte da integração contínua e fluxo de testes do Deno, nós medimos
-              o desempenho de certas métricas-chave da runtime. Você pode ver esses
-              comparativos aqui.
+              Como parte da integração contínua e fluxo de testes do Deno, nós
+              medimos o desempenho de certas métricas-chave da runtime. Você
+              pode ver esses comparativos aqui.
             </p>
             <p className="mt-4">
               {/* You are currently viewing data for{" "}
@@ -125,15 +125,18 @@ function Benchmarks(): React.ReactElement {
               </Link>{" "}
               commits. */}
               Você está visualizando os dados{" "}
-              {showAll ? "de todos os commits" : "dos commits mais recentes"} da branch{" "}
-              <a href="https://github.com/denoland/deno">master</a>.
-              Você também pode visualizar{" "}
+              {showAll ? "de todos os commits" : "dos commits mais recentes"} da
+              branch <a href="https://github.com/denoland/deno">master</a>. Você
+              também pode visualizar{" "}
               <Link
                 href="/benchmarks"
                 as={!showAll ? "/benchmarks?all" : "/benchmarks"}
               >
-                <a className="link">{!showAll ? "todos os commits" : "os commits mais recentes"}</a>
-              </Link>.
+                <a className="link">
+                  {!showAll ? "todos os commits" : "os commits mais recentes"}
+                </a>
+              </Link>
+              .
             </p>
             <div className="mt-12 pt-4">
               <h4 className="text-2xl font-bold tracking-tight">
@@ -208,11 +211,13 @@ function Benchmarks(): React.ReactElement {
                   already, so it should be fast because it bypasses the TS
                   compiler. A cold startup is when deno must compile from
                   scratch. */}
-                  Representado em escala logarítmica, o gráfico mostra quanto tempo leva para executar
-                  um script. Para que o Deno execute TypeScript, é preciso primeiro
-                  compilar para JS. Uma inicialização quente (warm) é quando Deno já possuí uma
-                  saída JS, portanto deve ser rápida pois não passa pelo compilador TS.
-                  Uma inicialização fria (cold) é quando Deno precisa compilar do zero.
+                  Representado em escala logarítmica, o gráfico mostra quanto
+                  tempo leva para executar um script. Para que o Deno execute
+                  TypeScript, é preciso primeiro compilar para JS. Uma
+                  inicialização quente (warm) é quando Deno já possuí uma saída
+                  JS, portanto deve ser rápida pois não passa pelo compilador
+                  TS. Uma inicialização fria (cold) é quando Deno precisa
+                  compilar do zero.
                 </p>
               </div>
               <div className="mt-8">
@@ -230,7 +235,8 @@ function Benchmarks(): React.ReactElement {
                 />
                 <p className="mt-1">
                   {/* How many threads various programs use. Smaller is better. */}
-                  Quantidade de threads que os programas usam. Quanto menos, melhor.
+                  Quantidade de threads que os programas usam. Quanto menos,
+                  melhor.
                 </p>
               </div>
               <div className="mt-8">
@@ -249,8 +255,8 @@ function Benchmarks(): React.ReactElement {
                 <p className="mt-1">
                   {/* How many total syscalls are performed when executing a given
                   script. Smaller is better. */}
-                  Quantidade de chamadas de sistema feitas durante a execução de um determinado script.
-                  Quanto menos, melhor.
+                  Quantidade de chamadas de sistema feitas durante a execução de
+                  um determinado script. Quanto menos, melhor.
                 </p>
               </div>
               <div className="mt-8">
@@ -270,7 +276,8 @@ function Benchmarks(): React.ReactElement {
                 />
                 <p className="mt-1">
                   {/* Max memory usage during execution. Smaller is better. */}
-                  Uso máximo de memória durante a execução. Quanto menos, melhor.
+                  Uso máximo de memória durante a execução. Quanto menos,
+                  melhor.
                 </p>
               </div>
             </div>
@@ -304,14 +311,17 @@ function Benchmarks(): React.ReactElement {
                   <em>bundle</em> does a full type check and generates a single
                   file output, while <em>bundle_no_check</em> uses the{" "}
                   <code>--no-check</code> flag to skip a full type check. */}
-                  Em ambos os casos, <code>std/examples/chat/server_test.ts</code>{" "}
-                  é cacheado pelo Deno. A carga de trabalho contém 20 módulos únicos de TypeScript.
-                  Com <em>check</em>, uma verificação completa de tipos do TypeScript é
-                  feita, enquanto com <em>no_check</em>, a flag{" "}
-                  <code>--no-check</code> é utilizada para pular a verificação completa de tipos.{" "}
-                  <em>bundle</em> faz uma verificação completa de tipos e gera um
-                  único arquivo de saída, enquanto <em>bundle_no_check</em> utiliza a flag{" "}
-                  <code>--no-check</code> para pular a verificação completa de tipos.
+                  Em ambos os casos,{" "}
+                  <code>std/examples/chat/server_test.ts</code> é cacheado pelo
+                  Deno. A carga de trabalho contém 20 módulos únicos de
+                  TypeScript. Com <em>check</em>, uma verificação completa de
+                  tipos do TypeScript é feita, enquanto com <em>no_check</em>, a
+                  flag <code>--no-check</code> é utilizada para pular a
+                  verificação completa de tipos. <em>bundle</em> faz uma
+                  verificação completa de tipos e gera um único arquivo de
+                  saída, enquanto <em>bundle_no_check</em> utiliza a flag{" "}
+                  <code>--no-check</code> para pular a verificação completa de
+                  tipos.
                 </p>
               </div>
             </div>
@@ -361,17 +371,19 @@ function Benchmarks(): React.ReactElement {
                 <p className="mt-1">
                   {/* Tests HTTP server performance. 10 keep-alive connections do as
                   many hello-world requests as possible. Bigger is better. */}
-                  Testa a performance de um server HTTP. 10 conexões do tipo keep-alive
-                  fazem o maior número possível de requisições hello-world. Quanto mais, melhor.
+                  Testa a performance de um server HTTP. 10 conexões do tipo
+                  keep-alive fazem o maior número possível de requisições
+                  hello-world. Quanto mais, melhor.
                 </p>
                 <ul className="ml-8 list-disc my-2">
                   <li>
                     {/* <SourceLink path="tools/deno_tcp.ts" name="deno_tcp" /> is a
                     fake http server that doesn't parse HTTP. It is comparable
                     to <SourceLink path="tools/node_tcp.js" name="node_tcp" /> */}
-                    <SourceLink path="cli/bench/deno_tcp.ts" name="deno_tcp" /> é uma
-                    imitação de um servidor http que não faz parse de HTTP. Pode ser comparado 
-                    com <SourceLink path="cli/bench/node_tcp.js" name="node_tcp" />
+                    <SourceLink path="cli/bench/deno_tcp.ts" name="deno_tcp" />{" "}
+                    é uma imitação de um servidor http que não faz parse de
+                    HTTP. Pode ser comparado com{" "}
+                    <SourceLink path="cli/bench/node_tcp.js" name="node_tcp" />
                   </li>
                   <li>
                     <SourceLink
@@ -379,36 +391,35 @@ function Benchmarks(): React.ReactElement {
                       name="deno_http"
                     />{" "}
                     {/* is a web server written in TypeScript. It is comparable to{" "} */}
-                    é um servidor web escrito em TypeScript. Pode ser comparado com{" "}
+                    é um servidor web escrito em TypeScript. Pode ser comparado
+                    com{" "}
                     <SourceLink
                       path="cli/bench/node_http.js"
                       name="node_http"
                     />
                   </li>
                   <li className="break-words">
-                   {/* core_http_bin_ops and core_http_json_ops are two versions of
+                    {/* core_http_bin_ops and core_http_json_ops are two versions of
                     a minimal fake HTTP server. It blindly reads and writes
                     fixed HTTP packets. It is comparable to deno_tcp and
                     node_tcp. This is a standalone executable that uses{" "} */}
-                    deno_core_single e deno_core_multi são duas versões de uma imitação de
-                    um servidor HTTP mínimo. Esse servidor somente lê e escreve pacotes HTTP
-                    fixos. Pode ser comparado com deno_tcp e node_tcp.
-                    Esse é um executável standalone que utiliza{" "}
+                    deno_core_single e deno_core_multi são duas versões de uma
+                    imitação de um servidor HTTP mínimo. Esse servidor somente
+                    lê e escreve pacotes HTTP fixos. Pode ser comparado com
+                    deno_tcp e node_tcp. Esse é um executável standalone que
+                    utiliza{" "}
                     <a
                       className="link"
                       href="https://crates.io/crates/deno_core"
                     >
-                      {/* the deno rust crate */}
-                      a crate de rust deno
+                      {/* the deno rust crate */}a crate de rust deno
                     </a>
-                    {/* . The code is in{" "} */}
-                    . Disponível em{" "}
+                    {/* . The code is in{" "} */}. Disponível em{" "}
                     <SourceLink
                       path="core/examples/http_bench_bin_ops.rs"
                       name="http_bench_bin_ops.rs"
                     />{" "}
-                    {/* and{" "} */}
-                    e{" "}
+                    {/* and{" "} */}e{" "}
                     <SourceLink
                       path="core/examples/http_bench_bin_ops.js"
                       name="http_bench_bin_ops.js"
@@ -419,8 +430,7 @@ function Benchmarks(): React.ReactElement {
                       path="core/examples/http_bench_json_ops.rs"
                       name="http_bench_json_ops.rs"
                     />{" "}
-                    {/* and{" "} */}
-                    e{" "}
+                    {/* and{" "} */}e{" "}
                     <SourceLink
                       path="core/examples/http_bench_json_ops.js"
                       name="http_bench_json_ops.js"
@@ -455,7 +465,8 @@ function Benchmarks(): React.ReactElement {
                   {/* Max latency during the same test used above for
                   requests/second. Smaller is better. Log scale. */}
                   Latência máxima durante o mesmo teste utilizado acima para
-                  requisições por segundo. Quanto menor, melhor. Gráfico em escala logarítmica. 
+                  requisições por segundo. Quanto menor, melhor. Gráfico em
+                  escala logarítmica.
                 </p>
               </div>
               <div className="mt-8">
@@ -476,8 +487,9 @@ function Benchmarks(): React.ReactElement {
                 <p className="mt-1">
                   {/* Tests proxy performance. 10 keep-alive connections do as many
                   hello-world requests as possible. Bigger is better. */}
-                  Testa o desempenho do proxy. 10 conexões do tipo keep-alive fazendo
-                  o maior número de requisições hello-world. Quanto mais, melhor.
+                  Testa o desempenho do proxy. 10 conexões do tipo keep-alive
+                  fazendo o maior número de requisições hello-world. Quanto
+                  mais, melhor.
                 </p>
                 <ul className="ml-8 list-disc my-2">
                   <li>
@@ -487,8 +499,8 @@ function Benchmarks(): React.ReactElement {
                     />{" "}
                     {/* is a fake tcp proxy server that doesn't parse HTTP. It is
                     comparable to{" "} */}
-                    é uma imitação de um servidor proxy TCP que não faz parse de HTTP.
-                    Pode ser comparado com{" "} 
+                    é uma imitação de um servidor proxy TCP que não faz parse de
+                    HTTP. Pode ser comparado com{" "}
                     <SourceLink
                       path="cli/bench/node_tcp_proxy.js"
                       name="node_proxy_tcp"
@@ -536,14 +548,13 @@ function Benchmarks(): React.ReactElement {
                 <p className="mt-1">
                   {/* Log scale. Time it takes to pipe a certain amount of data
                   through Deno.{" "} */}
-                  Gráfico em escala logarítmica, representa o tempo que leva para
-                  uma quantidade de dados fluirem através do Deno.
+                  Gráfico em escala logarítmica, representa o tempo que leva
+                  para uma quantidade de dados fluirem através do Deno.
                   <SourceLink
                     path="cli/tests/echo_server.ts"
                     name="echo_server.ts"
                   />{" "}
-                  {/* and */}
-                  e{" "}
+                  {/* and */}e{" "}
                   <SourceLink path="cli/tests/cat.ts" name="cat.ts" />.{" "}
                   {/* Smaller is better. */}
                   Quanto menor, melhor.
@@ -571,7 +582,8 @@ function Benchmarks(): React.ReactElement {
                 <p className="mt-1">
                   {/* We track the size of various files here. "deno" is the release
                   binary. */}
-                  Nós acompanhamos vários arquivos aqui. "deno" é a versão binária.
+                  Nós acompanhamos vários arquivos aqui. "deno" é a versão
+                  binária.
                 </p>
               </div>
               <div className="mt-8">

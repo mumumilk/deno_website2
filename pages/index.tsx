@@ -60,15 +60,15 @@ for await (const req of s) {
           <p className="my-4 text-gray-700">
             {/* Deno is a simple, modern and secure runtime for JavaScript and
             TypeScript that uses V8 and is built in Rust. */}
-            Deno é uma runtime simples, moderna e segura para JavaScript e TypeScript
-            que utiliza o V8 e é construída em Rust.
+            Deno é uma runtime simples, moderna e segura para JavaScript e
+            TypeScript que utiliza o V8 e é construída em Rust.
           </p>
           <ol className="ml-8 list-disc text-gray-700">
             <li>
               {/* Secure by default. No file, network, or environment access, unless
               explicitly enabled. */}
-              Segura por padrão. Sem acesso à arquivos, rede ou ambiente, a não ser
-              que habilitado explícitamente.
+              Segura por padrão. Sem acesso à arquivos, rede ou ambiente, a não
+              ser que habilitado explícitamente.
             </li>
             <li>
               {/* Supports TypeScript out of the box. */}
@@ -82,8 +82,9 @@ for await (const req of s) {
               {/*Has built-in utilities like a dependency inspector (
               <InlineCode>deno info</InlineCode>) and a code formatter (
               <InlineCode>deno fmt</InlineCode>). */}
-              Possui utilidades como inspetor de dependências (<InlineCode>deno info</InlineCode>)
-              e um formatador de código (<InlineCode>deno fmt</InlineCode>)
+              Possui utilidades como inspetor de dependências (
+              <InlineCode>deno info</InlineCode>) e um formatador de código (
+              <InlineCode>deno fmt</InlineCode>)
             </li>
             <li>
               {/* Has a set of reviewed (audited) standard modules that are
@@ -91,8 +92,8 @@ for await (const req of s) {
               <a href="https://deno.land/std" className="link">
                 deno.land/std
               </a> */}
-              Tem um conjunto de módulos padrões revisados (auditados) que funcionam
-              garantidamente com Deno:{" "}
+              Tem um conjunto de módulos padrões revisados (auditados) que
+              funcionam garantidamente com Deno:{" "}
               <a href="https://deno.land/std" className="link">
                 deno.land/std
               </a>
@@ -147,8 +148,8 @@ for await (const req of s) {
               <a className="link">the manual</a>
             </Link>
             . */}
-            Você pode encontrar uma introdução mais aprofundada, com exemplos e configuração
-            de ambiente{" "}
+            Você pode encontrar uma introdução mais aprofundada, com exemplos e
+            configuração de ambiente{" "}
             <Link href="/[...rest]" as="/manual">
               <a className="link">no manual</a>
             </Link>
@@ -189,10 +190,10 @@ for await (const req of s) {
             <Link href="/manual">
               <a className="link">um manual</a>
             </Link>{" "}
-            que contém explicações mais aprofundadas acerca das funções mais complexas
-            da runtime, uma introdução aos conceitos nos quais o Deno é escrito em cima,
-            detalhes internos do Deno, como embutir Deno na sua própria aplicação e como
-            extender o Deno usando plugins Rust. 
+            que contém explicações mais aprofundadas acerca das funções mais
+            complexas da runtime, uma introdução aos conceitos nos quais o Deno
+            é escrito em cima, detalhes internos do Deno, como embutir Deno na
+            sua própria aplicação e como extender o Deno usando plugins Rust.
           </p>
           <p className="my-4 text-gray-700">
             {/* The manual also contains information about the built in tools that
@@ -219,10 +220,10 @@ for await (const req of s) {
               denoland/deno
             </a>{" "}
             repository. */}
-            Próximo à runtime, Deno também fornece uma lista de módulos
-            padrões auditados que são revisados pelos mantenedores do Deno e funcionam
-            garantidamente com versões específicas do Deno. Eles vivem junto ao código
-            fonte do Deno no repositório{" "}
+            Próximo à runtime, Deno também fornece uma lista de módulos padrões
+            auditados que são revisados pelos mantenedores do Deno e funcionam
+            garantidamente com versões específicas do Deno. Eles vivem junto ao
+            código fonte do Deno no repositório{" "}
             <a href="https://github.com/denoland/deno" className="link">
               denoland/deno
             </a>{" "}
@@ -278,10 +279,11 @@ for await (const req of s) {
             built in tooling like <InlineCode>deno info</InlineCode> and{" "}
             <InlineCode>deno doc</InlineCode>. deno.land also provides a web UI
             for viewing module documentation. It is available at{" "} */}
-            Para facilitar o consumo de módulos externos, Deno fornece ferramentas
-            como <InlineCode>deno info</InlineCode> e{" "}
-            <InlineCode>deno doc</InlineCode>. deno.land também fornece uma interface
-            web para visualização da documentação dos módulos. Disponível em{" "}
+            Para facilitar o consumo de módulos externos, Deno fornece
+            ferramentas como <InlineCode>deno info</InlineCode> e{" "}
+            <InlineCode>deno doc</InlineCode>. deno.land também fornece uma
+            interface web para visualização da documentação dos módulos.
+            Disponível em{" "}
             <a href="https://doc.deno.land" className="link">
               doc.deno.land
             </a>
@@ -290,8 +292,8 @@ for await (const req of s) {
           <p className="my-4 text-gray-700">
             {/* deno.land also provides a simple public hosting service for ES
             modules that work with Deno. It can be found at{" "} */}
-            deno.land também fornece um serviço simples de hospedagem para ES modules
-            que funcionam com Deno. Disponível em{" "}
+            deno.land também fornece um serviço simples de hospedagem para ES
+            modules que funcionam com Deno. Disponível em{" "}
             <Link href="/x">
               <a className="link">deno.land/x</a>
             </Link>

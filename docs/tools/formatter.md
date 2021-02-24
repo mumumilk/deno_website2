@@ -18,11 +18,7 @@ Ignore formatting code by preceding it with a `// deno-fmt-ignore` comment:
 
 ```ts
 // deno-fmt-ignore
-export const identity = [
-    1, 0, 0,
-    0, 1, 0,
-    0, 0, 1,
-];
+export const identity = [1, 0, 0, 0, 1, 0, 0, 0, 1];
 ```
 
 Or ignore an entire file by adding a `// deno-fmt-ignore-file` comment at the

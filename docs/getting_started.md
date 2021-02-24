@@ -11,6 +11,7 @@ In this chapter we'll discuss:
 - [Using Deno with TypeScript](./getting_started/typescript.md)
 - [Using WebAssembly](./getting_started/webassembly.md)
 - [Debugging your code](./getting_started/debugging_your_code.md) -->
+
 # Começando
 
 Neste capítulo vamos discutir:

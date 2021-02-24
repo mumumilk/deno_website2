@@ -32,22 +32,26 @@ command.
  */
 const json = fetch("https://api.github.com/users/denoland");
 
-json.then((response) => {
-  return response.json();
-}).then((jsonData) => {
-  console.log(jsonData);
-});
+json
+  .then((response) => {
+    return response.json();
+  })
+  .then((jsonData) => {
+    console.log(jsonData);
+  });
 
 /**
  * Output: HTML Data
  */
 const text = fetch("https://deno.land/");
 
-text.then((response) => {
-  return response.text();
-}).then((textData) => {
-  console.log(textData);
-});
+text
+  .then((response) => {
+    return response.text();
+  })
+  .then((textData) => {
+    console.log(textData);
+  });
 
 /**
  * Output: Error Message

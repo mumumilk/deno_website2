@@ -34,8 +34,8 @@ function TranslationsPage(): React.ReactElement {
             >
               Add it!
             </a> */}
-            A documentação do deno está disponível nos seguintes idiomas.
-            Você tem alguma que queira mostrar aqui?{" "}
+            A documentação do deno está disponível nos seguintes idiomas. Você
+            tem alguma que queira mostrar aqui?{" "}
             <a
               href="https://github.com/denoland/deno_website2/blob/main/translations.json"
               className="link"

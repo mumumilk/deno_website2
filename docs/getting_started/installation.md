@@ -2,6 +2,7 @@
 
 Deno works on macOS, Linux, and Windows. Deno is a single binary executable. It
 has no external dependencies. -->
+
 ## Instalação
 
 Deno funciona em macOS, Linux e Windows, e é um único binário executável. Ele
@@ -52,6 +53,7 @@ Deno binaries can also be installed manually, by downloading a zip file at
 [github.com/denoland/deno/releases](https://github.com/denoland/deno/releases).
 These packages contain just a single executable file. You will have to set the
 executable bit on macOS and Linux. -->
+
 ### Baixando e instalando
 
 [deno_install](https://github.com/denoland/deno_install) fornece scripts
@@ -92,10 +94,12 @@ Utilizando [Cargo](https://crates.io/crates/deno) (Windows, macOS, Linux):
 ```shell
 cargo install deno
 ```
-Os binários do Deno também podem ser instalados manualmente, baixando um arquivo comprimido
-em [github.com/denoland/deno/releases](https://github.com/denoland/deno/releases).
-Esses pacotes possuem um único arquivo executável. Você terá que configurar
-o bit executável no macOS e Linux.
+
+Os binários do Deno também podem ser instalados manualmente, baixando um arquivo
+comprimido em
+[github.com/denoland/deno/releases](https://github.com/denoland/deno/releases).
+Esses pacotes possuem um único arquivo executável. Você terá que configurar o
+bit executável no macOS e Linux.
 
 <!-- ### Testing your installation
 
@@ -104,13 +108,15 @@ to the console the installation was successful.
 
 Use `deno help` to see help text documenting Deno's flags and usage. Get a
 detailed guide on the CLI [here](./command_line_interface.md). -->
+
 ### Testando sua instalação
 
-Para testar sua instalação, execute `deno --version`. Se o comando mostrar a versão
-do Deno no console, significa que sua instalação foi feita com sucesso.
+Para testar sua instalação, execute `deno --version`. Se o comando mostrar a
+versão do Deno no console, significa que sua instalação foi feita com sucesso.
 
-Utilize `deno help` para visualizar o texto de ajuda que documenta as flags do Deno e
-como utilizá-las. Veja um guia detalhado sobre a CLI [aqui](./command_line_interface.md).
+Utilize `deno help` para visualizar o texto de ajuda que documenta as flags do
+Deno e como utilizá-las. Veja um guia detalhado sobre a CLI
+[aqui](./command_line_interface.md).
 
 <!-- ### Updating
 
@@ -129,6 +135,7 @@ You can also use this utility to install a specific version of Deno:
 ```shell
 deno upgrade --version 1.0.1
 ``` -->
+
 ### Atualizando
 
 Para atualizar uma versão já instalada do Deno, você pode executar:
@@ -138,10 +145,11 @@ deno upgrade
 ```
 
 Esse comando irá pegar a última versão do
-[Deno](https://github.com/denoland/deno/releases),
-descomprimir, e substituir seu atual executável com ela.
+[Deno](https://github.com/denoland/deno/releases), descomprimir, e substituir
+seu atual executável com ela.
 
-Você também pode utilizar o comando abaixo para instalar uma versão específica do Deno:
+Você também pode utilizar o comando abaixo para instalar uma versão específica
+do Deno:
 
 ```shell
 deno upgrade --version 1.0.1
@@ -151,7 +159,8 @@ deno upgrade --version 1.0.1
 
 Information about how to build from source can be found in the `Contributing`
 chapter. -->
+
 ### Construindo direto do código fonte
 
-Mais informações acerca de como construir diretamente do código fonte podem
-ser encontradas no capítulo `Contribuindo`.
+Mais informações acerca de como construir diretamente do código fonte podem ser
+encontradas no capítulo `Contribuindo`.

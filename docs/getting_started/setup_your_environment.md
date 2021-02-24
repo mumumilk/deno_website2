@@ -3,11 +3,12 @@
 To productively get going with Deno you should set up your environment. This
 means setting up shell autocomplete, environmental variables and your editor or
 IDE of choice. -->
+
 ## Configurando seu ambiente
 
-Para ter uma melhor produtividade com Deno, você deve configurar seu ambiente. Isso
-significa configurar seu shell para autocompletar sentenças, variáveis de ambiente
-e seu editor ou IDE de sua escolha.
+Para ter uma melhor produtividade com Deno, você deve configurar seu ambiente.
+Isso significa configurar seu shell para autocompletar sentenças, variáveis de
+ambiente e seu editor ou IDE de sua escolha.
 
 <!-- ### Environmental variables
 
@@ -19,16 +20,19 @@ where generated and cached source code is written and read to.
 `NO_COLOR` will turn off color output if set. See https://no-color.org/. User
 code can test if `NO_COLOR` was set without having `--allow-env` by using the
 boolean constant `Deno.noColor`. -->
+
 ### Variáveis de ambiente
 
 Existem algumas variáveis de ambiente que controlam como o Deno se comporta:
 
-`DENO_DIR` aponta para `$HOME/.cache/deno`, mas pode ser configurado para qualquer outro caminho
-que controle onde o código gerado e cacheado é escrito ou lido.
+`DENO_DIR` aponta para `$HOME/.cache/deno`, mas pode ser configurado para
+qualquer outro caminho que controle onde o código gerado e cacheado é escrito ou
+lido.
 
-`NO_COLOR`, caso configurado, irá desativar a coloração da saída. Veja https://no-color.org/.
-Ao utilizar a constante `Deno.noColor`, códigos de usuários podem testar se a variável `NO_COLOR`
-foi configurada sem a utilização da flag `--allow-env`.
+`NO_COLOR`, caso configurado, irá desativar a coloração da saída. Veja
+https://no-color.org/. Ao utilizar a constante `Deno.noColor`, códigos de
+usuários podem testar se a variável `NO_COLOR` foi configurada sem a utilização
+da flag `--allow-env`.
 
 <!-- ### Shell autocomplete
 
@@ -91,6 +95,7 @@ deno completions powershell > $profile
 This will be create a Powershell profile at
 `$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1` by default,
 and it will be run whenever you launch the PowerShell. -->
+
 ### Autocompletar sentenças no Shell
 
 Você pode configurar seu shell para autocompletar sentenças através do comando
@@ -127,9 +132,10 @@ autoload -Uz compinit
 compinit -u
 ```
 
-e reinicie seu terminal. Note que, caso o autocomplete ainda não esteja carregando,
-você talvez tenha que executar `rm ~/.zcompdump` para remover antigos complementos
-gerados e então executar `compinit` para gerá-los novamente.
+e reinicie seu terminal. Note que, caso o autocomplete ainda não esteja
+carregando, você talvez tenha que executar `rm ~/.zcompdump` para remover
+antigos complementos gerados e então executar `compinit` para gerá-los
+novamente.
 
 Exemplo (zsh + oh-my-zsh) [recomendados para quem utiliza zsh] :
 
@@ -137,9 +143,11 @@ Exemplo (zsh + oh-my-zsh) [recomendados para quem utiliza zsh] :
 mkdir ~/.oh-my-zsh/custom/plugins/deno
 deno completions zsh > ~/.oh-my-zsh/custom/plugins/deno/_deno
 ```
-Após executar esse comando, adicione o plugin do Deno logo abaixo da tag de plugins no arquivo `~/.zshrc`.
-Para ferramantas como `antigen`, o caminho será `~/.antigen/bundles/robbyrussell/oh-my-zsh/plugins`
-e o comando será `antigen bundle deno` e assim por diante.
+
+Após executar esse comando, adicione o plugin do Deno logo abaixo da tag de
+plugins no arquivo `~/.zshrc`. Para ferramantas como `antigen`, o caminho será
+`~/.antigen/bundles/robbyrussell/oh-my-zsh/plugins` e o comando será
+`antigen bundle deno` e assim por diante.
 
 Exemplo (Powershell):
 
@@ -149,8 +157,8 @@ deno completions powershell > $profile
 ```
 
 Por padrão, isso irá criar um perfil do PowerShell em
-`$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`,
-e irá ser executado quando você abrir o PowerShell.
+`$HOME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`, e irá ser
+executado quando você abrir o PowerShell.
 
 <!-- ### Editors and IDEs
 
@@ -160,14 +168,18 @@ at the moment, many editors will throw errors about being unable to find files
 or imports having unnecessary file extensions.
 
 The community has developed extensions for some editors to solve these issues: -->
+
 ### Editores e IDEs
 
-A maioria dos editores atualmente não suportam nativamente o uso de extensões nas importações,
-nem importações via HTTP, e o Deno importa módulos externos utilizando estes métodos.
-Caso você tente importar um módulo utilizando um desses métodos, muitos editores irão mostrar erros
-dizendo que não foram capazes de encontrar os arquivos e importações cuja extensão foi adicionada desnecessariamente.
+A maioria dos editores atualmente não suportam nativamente o uso de extensões
+nas importações, nem importações via HTTP, e o Deno importa módulos externos
+utilizando estes métodos. Caso você tente importar um módulo utilizando um
+desses métodos, muitos editores irão mostrar erros dizendo que não foram capazes
+de encontrar os arquivos e importações cuja extensão foi adicionada
+desnecessariamente.
 
-Para resolver esses problemas, a comunidade desenvolveu extensões para alguns editores:
+Para resolver esses problemas, a comunidade desenvolveu extensões para alguns
+editores:
 
 <!-- #### VS Code
 
@@ -175,6 +187,7 @@ The beta version of [vscode_deno](https://github.com/denoland/vscode_deno) is
 published on the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno).
 Please report any issues. -->
+
 #### VS Code
 
 A versão beta do [vscode_deno](https://github.com/denoland/vscode_deno) está
@@ -190,6 +203,7 @@ Support for JetBrains IDEs is available through
 For more information on how to set-up your JetBrains IDE for Deno, read
 [this comment](https://youtrack.jetbrains.com/issue/WEB-41607#focus=streamItem-27-4160152.0-0)
 on YouTrack. -->
+
 #### IDEs da JetBrains
 
 Suporte para IDEs da JetBrains estão disponíveis através
@@ -210,16 +224,18 @@ After CoC is installed, from inside Vim, run`:CocInstall coc-tsserver` and
 run `:CocCommand deno.types`. Optionally restart the CoC server `:CocRestart`.
 From now on, things like `gd` (go to definition) and `gr` (goto/find references)
 should work. -->
+
 #### Vim e NeoVim
 
 Vim funciona relativamente bem para Deno/TypeScript caso você instale
-[CoC](https://github.com/neoclide/coc.nvim) (engine de intellisense e protocolo de linguagem).
+[CoC](https://github.com/neoclide/coc.nvim) (engine de intellisense e protocolo
+de linguagem).
 
 Depois de instalar o CoC, execute `:CocInstall coc-tsserver` e
-`:CocInstall coc-deno` dentro do Vim. Para que o autocomplete funcione para o Deno
-e definições de tipos, execute `:CocCommand deno.types`. Opicionalmente, reinicie o servidor CoC
-através do comando `:CocRestart`.
-Após isso, comandos como `gd` (ir para definição) e `gr` (ir/encontrar referências) devem funcionar
+`:CocInstall coc-deno` dentro do Vim. Para que o autocomplete funcione para o
+Deno e definições de tipos, execute `:CocCommand deno.types`. Opicionalmente,
+reinicie o servidor CoC através do comando `:CocRestart`. Após isso, comandos
+como `gd` (ir para definição) e `gr` (ir/encontrar referências) devem funcionar
 corretamente.
 
 <!-- #### Emacs
@@ -251,21 +267,22 @@ project (`npm init -y` as necessary), then add the following block to your
   }
 }
 ``` -->
+
 #### Emacs
 
-Emacs funciona relativamente bem para projetos TypeScript que utilizam Deno através
-de uma combinação de [tide](https://github.com/ananthakumaran/tide), que é uma maneira
-canônica de utilizar TypeScript dentro do Emacs, e
+Emacs funciona relativamente bem para projetos TypeScript que utilizam Deno
+através de uma combinação de [tide](https://github.com/ananthakumaran/tide), que
+é uma maneira canônica de utilizar TypeScript dentro do Emacs, e
 [typescript-deno-plugin](https://github.com/justjavac/typescript-deno-plugin)
 que é utilizado pela
 [extensão oficial do Deno para VSCode](https://github.com/denoland/vscode_deno).
 
-Para utilizá-la, primeiramente garanta que `tide` está devidamente configurado para sua
-instância do Emacs. Após isso, como instruído na página do
+Para utilizá-la, primeiramente garanta que `tide` está devidamente configurado
+para sua instância do Emacs. Após isso, como instruído na página do
 [typescript-deno-plugin](https://github.com/justjavac/typescript-deno-plugin),
 primeiro execute `npm install --save-dev typescript-deno-plugin typescript` no
-seu projeto (`npm init -y` caso necessário), e adicione o seguinte código ao
-seu `tsconfig.json` e você estará pronto.
+seu projeto (`npm init -y` caso necessário), e adicione o seguinte código ao seu
+`tsconfig.json` e você estará pronto.
 
 ```json
 {
@@ -284,6 +301,7 @@ seu `tsconfig.json` e você estará pronto.
 <!-- If you don't see your favorite IDE on this list, maybe you can develop an
 extension. Our [community Discord group](https://discord.gg/deno) can give you
 some pointers on where to get started. -->
+
 Caso a sua IDE de escolha não esteja nessa lista, talvez você possa desenvolver
-uma extensão. Ou [a comunidade no grupo do Discord](https://discord.gg/deno) pode
-dar um direcionamento de como começar.
+uma extensão. Ou [a comunidade no grupo do Discord](https://discord.gg/deno)
+pode dar um direcionamento de como começar.

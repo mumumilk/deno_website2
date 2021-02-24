@@ -1,8 +1,10 @@
 /* Copyright 2020 the Deno authors. All rights reserved. MIT license. */
 
-const xBasepath = "https://raw.githubusercontent.com/mumumilk/deno_website2_portuguese/";
+const xBasepath =
+  "https://raw.githubusercontent.com/mumumilk/deno_website2_portuguese/";
 // const xBasepath = "https://deno.land/x/deno@";
-const githubBasepath = "https://raw.githubusercontent.com/mumumilk/deno_website2_portuguese/";
+const githubBasepath =
+  "https://raw.githubusercontent.com/mumumilk/deno_website2_portuguese/";
 // const githubBasepath = "https://raw.githubusercontent.com/denoland/deno/";
 const docpath = "https://github.com/mumumilk/deno_website2_portuguese/blob/";
 // const docpath = "https://github.com/denoland/deno/blob/";
