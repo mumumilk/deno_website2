@@ -14,7 +14,7 @@ function Header({
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="relative py-6">
+    <div className="relative py-6 z-10">
       <nav
         className={`mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 ${
           widerContent ? "max-w-screen-xl" : "max-w-screen-lg lg:p-0"
@@ -58,15 +58,20 @@ function Header({
           </button>
         </div>
         <div className="hidden lg:flex md:ml-10 items-center text-center">
-          <Link href="/" as="/#installation">
+          <Link href="/#installation">
             <a className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               {/* Install */}
               Instalação
             </a>
           </Link>
-          <Link href="/[...rest]" as="/manual">
+          <Link href="/manual">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               Manual
+            </a>
+          </Link>
+          <Link href="/posts">
+            <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
+              News
             </a>
           </Link>
           <a
@@ -76,7 +81,7 @@ function Header({
             {/* Runtime API */}
             API da runtime
           </a>
-          <Link href="/[...rest]" as="/std">
+          <Link href="/std">
             <a className="ml-10 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">
               {/* Standard Library */}
               Biblioteca padrão
@@ -165,15 +170,20 @@ function Header({
                 </div>
               </div>
               <div className="px-2 pt-4 pb-3">
-                <Link href="/" as="/#installation">
+                <Link href="/#installation">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     {/* Install */}
                     Instalação
                   </a>
                 </Link>
-                <Link href="/[...rest]" as="/manual">
+                <Link href="/manual">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     Manual
+                  </a>
+                </Link>
+                <Link href="/posts">
+                  <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
+                    News
                   </a>
                 </Link>
                 <a
@@ -183,7 +193,7 @@ function Header({
                   {/* Runtime API */}
                   API da runtime
                 </a>
-                <Link href="/[...rest]" as="/std">
+                <Link href="/std">
                   <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out">
                     {/* Standard Library */}
                     Biblioteca padrão

@@ -29,7 +29,7 @@ function TranslationsPage(): React.ReactElement {
             {/* Deno docs is available in the following languages. Do you have a
             piece to display here?{" "}
             <a
-              href="https://github.com/denoland/deno_website2/blob/master/translations.json"
+              href="https://github.com/denoland/deno_website2/blob/main/translations.json"
               className="link"
             >
               Add it!
@@ -37,7 +37,7 @@ function TranslationsPage(): React.ReactElement {
             A documentação do deno está disponível nos seguintes idiomas.
             Você tem alguma que queira mostrar aqui?{" "}
             <a
-              href="https://github.com/denoland/deno_website2/blob/master/translations.json"
+              href="https://github.com/denoland/deno_website2/blob/main/translations.json"
               className="link"
             >
               Adicione!
