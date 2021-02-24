@@ -1,5 +1,4 @@
 /* Copyright 2020 the Deno authors. All rights reserved. MIT license. */
-
 import json from "../translations.json";
 
 export const TRANSLATIONS: Translation[] = json.sort((a, b) =>
